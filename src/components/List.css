@@ -1,0 +1,28 @@
+dt + dd {
+  max-height: 0;
+}
+
+dt.open {
+  background:#0E0C0D;
+  border-color:#0E0C0D;
+  color:#edeff3;
+  margin:-5px;
+}
+dt.open span {
+  color:#edeff3;
+}
+dt.open:after{
+  transform:rotate(180deg) translateY(-2px);
+}
+dt.open:before{
+  opacity:1;
+  transform:rotate(-360deg) translateY(-3px);
+}
+dt.open + dd{
+  padding:15px 15px 30px;
+  margin:0 -5px;
+  max-height:200px;
+}
+dt.open + dd > svg {
+  opacity: 1;
+}
